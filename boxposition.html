@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+<title>position test[relative + absolute模式]</title>  
+<style>  
+.div2 {  
+    position:absolute;right:50%;top:0%;  
+    border:solid 1px #0000ff;  
+ }  
+   
+.div4 {  
+    position:relative;right:50%;top:0%;  
+    border:solid 1px #0000ff;  
+ }   
+   
+.div6 {  
+    position:relative;right:50%;top:0%;  
+    border:solid 1px #0000ff;  
+ }    
+   
+.div8 {  
+    position:absolute;right:50%;top:0%;  
+    border:solid 1px #0000ff;  
+ }    
+   
+.div10 {  
+    position:absolute;right:50%;top:0%;  
+    border:solid 1px #0000ff;  
+ }    
+   
+.div12 {  
+    position:relative;right:60;top:0%;  
+    border:solid 1px #0000ff;  
+ }   
+ body{
+ 	font-family:"微软雅黑" sans-serif; 
+ }   
+</style>  
+</head>  
+  
+<body>  
+<p>  
+    <h1>position test</h1>  
+</p>  
+<div id="div" style="width:400;height:300;border:1px solid #ff0000;position:relative;">  
+1、外：relative，内：absolute，内DIV宽度等于文字宽度<br>  
+外：relative，内：absolute<br>  
+外：relative，内：absolute<br>  
+外：relative，内：absolute<br>  
+    <div class="div2" id="div2"> TEST IS OK!</div>  
+</div>  
+  
+<div id="div3" style="width:400;height:300;border:1px solid #ff0000;position:relative;">  
+2、外：relative，内：relative，<br>  
+内DIV宽度等于父容器宽度<br>  
+    <div class="div4" id="div4"> TEST IS OK!</div>  
+</div>  
+  
+<div id="div5" style="width:400;height:300;border:1px solid #ff0000;">  
+3、外：static，内：relative，<br>  
+内DIV宽度等于父容器宽度<br>  
+内DIV宽度等于父容器宽度<br>  
+    <div class="div6" id="div6"> TEST IS OK!</div>  
+</div>  
+  
+  
+<div id="div7" style="width:400;height:300;border:1px solid #ff0000;">  
+4、外：static，内：absolute，<br>  
+内DIV宽度等于文字宽度<br>  
+百分比以窗口大小为坐标<br>  
+    <div class="div8" id="div8"> TEST IS OK!</div>  
+</div>  
+<!--  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+<br>555555555555555555555555555555555555555555555555555555  
+  -->
+<div id="div9" style="width:400;height:300;border:1px solid #ff0000;position:absolute;">  
+5、外：abslolute，内：absolute，<br>  
+内DIV宽度等于文字宽度<br>  
+百分比以父容器大小为坐标<br>  
+外DIV浮动<br>  
+    <div class="div10" id="div10"> TEST IS OK!</div>  
+</div>  
+<!--<br>  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+<br>6666666666666666666666666666666666666666666666666666666  
+  -->
+<div id="div11" style="width:400;height:300;border:1px solid #ff0000;position:absolute;">  
+6、外：absolute，内：relative，<br>  
+内DIV宽度等于父容器宽度<br>  
+百分比以窗口大小为坐标<br>  
+外DIV浮动<br>  
+    <div class="div12" id="div12"> TEST IS OK!</div>  
+</div>  
+  
+  
+  
+<p>关系表</p>  
+  
+<p><font>↑</font></p>  
+<script lang="javascript">  
+    //var x =(document.body.offsetWidth - document.getElementById('div2').offsetWidth)/2;  
+    //document.getElementById('div2').style.left = x;  
+</script>  
+<table border="1" width="57%" style="border-collapse: collapse">  
+    <tr>  
+        <td width="4%">　</td>  
+        <td width="12%" align="center"><font size="2">外</font></td>  
+        <td width="15%" align="center"><font size="2">内</font></td>  
+        <td width="16%" align="center"><span lang="zh-cn"><font size="2">内DIV宽度</font></span></td>  
+        <td width="145" align="center"><font size="2">百分比坐标</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" align="center">1</td>  
+        <td width="12%"><font size="2">relative</font></td>  
+        <td width="15%"><font size="2">absolute</font></td>  
+        <td width="16%"><font size="2">文字宽度</font></td>  
+        <td width="145"><font size="2">父容器</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" height="22" align="center">2</td>  
+        <td width="12%" height="22"><font size="2">relative</font></td>  
+        <td width="15%" height="22"><font size="2">relative</font></td>  
+        <td height="22" width="16%"><font size="2">父容器宽度</font></td>  
+        <td height="22" width="145"><font size="2">父容器</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" align="center">3</td>  
+        <td width="12%"><font size="2">static</font></td>  
+        <td width="15%"><font size="2">relative</font></td>  
+        <td width="16%"><font size="2">父容器宽度</font></td>  
+        <td width="145"><font size="2">父容器</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" align="center">4</td>  
+        <td width="12%"><font size="2">static</font></td>  
+        <td width="15%"><font size="2">absolute</font></td>  
+        <td width="16%"><font size="2">文字宽度</font></td>  
+        <td width="145"><font size="2">浏览器窗口</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" align="center">5</td>  
+        <td width="12%"><font size="2">absolute</font></td>  
+        <td width="15%"><font size="2">absolute</font></td>  
+        <td width="16%"><font size="2">文字宽度</font></td>  
+        <td width="145"><font size="2">父容器</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%" align="center">6</td>  
+        <td width="12%"><font size="2">absolute</font></td>  
+        <td width="15%"><font size="2">relative</font></td>  
+        <td width="16%"><font size="2">父容器宽度</font></td>  
+        <td width="145"><font size="2">父容器</font></td>  
+    </tr>  
+    <tr>  
+        <td width="4%">　</td>  
+        <td width="12%">　</td>  
+        <td width="15%">　</td>  
+        <td width="16%">　</td>  
+        <td width="145">　</td>  
+    </tr>  
+    <tr>  
+        <td width="4%">　</td>  
+        <td colspan="4"><font size="2">结论：1、容器内子组件的宽度和定位属性在relative</font><span lang="zh-cn"><font size="2">下与父容器无关；</font></span><p>  
+        <font size="2">子组件position为absolute<span lang="zh-cn">时定位在父容器的</span>absolute<span lang="zh-cn">和</span>relative<span lang="zh-cn">下表现相同</span>,</font></p>  
+        <p><span lang="zh-cn"><font size="2">文字宽度属性与父容器无关。</font></span></p>  
+        <p><span lang="zh-cn"><font size="2">2、子组件为</font></span><font size="2">absolute</font><span lang="zh-cn"><font size="2">时，默认宽度均为文字宽度；子组件为relative时，默认宽度均为父容器宽度</font></span></td>  
+    </tr>  
+</table>  
+</body>  
+  
+</html>  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>example</title>
+		<link rel="stylesheet" href="css/sy.css" media="screen"> 
+		<script>
+		window.onload	=function(){
+			var para	= document.getElementById("example");
+			alert(typeof para.nodeName);
+			
+			alert(typeof para.style);
+//			alert("THe color is " + para.style.color);
+//			alert("The font-family is " + para.style.fontFamily);
+		 para.style.color = 'red'; 
+		 para.style.font 	= "2em 'Times',serif"; 
+		}
+		
+		</script>
+	</head>
+	<body>
+		<p id="example" >
+			an example of a paragraph
+		</p>
+	</body>
+</html>

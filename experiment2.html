@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3115005544潘浩源</title>
+	<style type="text/css">
+		#circle1{
+			border:1px solid #808080;
+			background-color:purple;
+			width:400px;
+			height:400px;
+			margin:0 auto;
+			border-radius:0%;
+			
+		}
+		#circle2{
+			border:1px solid #808080;
+			background-color:purple;
+			width:400px;
+			height:400px;
+			margin:0 auto;
+			border-radius:0%;
+			animation:changeCircle:changeCircle 10s infinite;
+			-webkit-animation:changeCircle 10s infinite;
+			
+		}
+		@keyframes changeCircle{
+			from{border-radius:0;}
+			to{border-radius:100%;}
+		}
+		
+		
+		@-webkit-keyframes changeCircle{
+			from{border-radius:0;}
+			to{border-radius:100%;}
+		}
+	</style> 
+	<script>
+		 function changeName(){
+			if(!document.getElementById) return false;
+			var elem 	= document.getElementById("circle1");
+			elem.setAttribute("id","circle2");
+			return true;
+		}
+	</script>
+	</head>
+	<body>
+	<div id="circle1"  onclick="changeName()">
+		3115005544潘浩源
+	</div>
+	
+	</body>
+</html>

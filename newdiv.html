@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript">
+window.onload= function()
+{
+document.onmousedown	=function(){
+var e= event || window.event;
+var ddiv= document.createElement('p');
+ddiv.style.left	= e.clientX +"px";
+ddiv.style.top	= e.clientY +"px";
+ddiv.style.position	='absolute';
+ddiv.style.width	='200px';
+ddiv.style.height	='200px';
+ddiv.style.border	="1px solid red";
+document.body.appendChild(ddiv);
+}
+}
+</script>
+	</body>
+</html>

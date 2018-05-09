@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>颜色渐变</title>
+	<style type="text/css">
+		h2{text-shadow:2px 2px 2px salmon ;
+		box-shadow:5px 5px 5px 5px grey;}
+		#yiyiyi{
+			height:300px;
+			background: -webkit-linear-gradient(right,yellow,green); /* Safari 5.1 - 6.0 */
+			background: -moz-linear-gradient(right,yellow,green);
+			background: -o-linear-gradient(right,yellow,green);
+			background: linear-gradient(right,yellow,green);}
+	#popopo{
+	 	width:200px;
+	 	height:200px;
+	 	background-color: #6495ED;
+	 	background-color: #6495ED;
+	 	/*transform: translate(50px,100px);
+	 	-ms-transform: translate(50px,100px);
+	 	-webkit-transform:translate(50px,100px);*/
+	 	/*transform: rotateX(40deg);
+	 	-ms-transform: rotateX(30deg);
+	 	-webkit-transform:scale(2,2);*/
+	 	transition: width  2s;
+	 	-webkit-transition:width 2s;
+ 	}	 
+ 	#popopo:hover{
+ 		width:400px;
+ 		
+ 	}	
+	</style>
+		
+	</head>
+	
+	<body>
+	<h2>颜色渐变，从上至下</h2>
+	<p>从顶部到下，从xx变成xx</p>
+	<div id="yiyiyi"></div>
+	<div id="popopo">  拉长拉长</div>
+	</body>
+</html>

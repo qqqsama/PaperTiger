@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+		#container{
+			margin: 0 auto;
+			width:500px;
+			height:500px;
+			box-sizing: border-box;
+			border:1px solid #008000;
+		
+			border-radius:50%;
+			position:relative;
+		}
+		#circle{
+			position:absolute;
+			border:#008000 1px solid;
+			left:50%;
+		    height:50px;
+		    width:50px;
+		    transform-origin:0 250px;
+		    border-radius: 50%;
+		    animation:spin 10s infinite;
+		}
+@keyframes spin{
+	
+	
+	to{ transform: rotate(1turn);}
+}
+	</style> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="circle">
+			</div>
+		</div>
+	</body>
+</html>
